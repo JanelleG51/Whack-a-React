@@ -1,40 +1,44 @@
 - [Whack-a-React](#whack-a-react)
-  - [Visitor Objectives](#visitor-objectives)
-- [UX](#ux)
-  - [Target Audience](#target-audience)
-  - [User Stories](#user-stories)
-    - [New users](#new-users)
-    - [Returning Users](#returning-users)
-- [Visuals](#visuals)
-  - [Imagery](#imagery)
-  - [Fonts](#fonts)
-  - [Colours](#colours)
-  - [Wireframes](#wireframes)
-- [Features](#features)
-  - [Features across all pages](#features-across-all-pages)
-    - [Landing Page](#landing-page)
-    - [Game Page](#game-page)
-    - [Results Modal](#results-modal)
-  - [Existing Features](#existing-features)
-  - [Features Left to Implement](#features-left-to-implement)
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-- [Manual Functionality Testing](#manual-functionality-testing)
-  - [Issue and Fixes](#issue-and-fixes)
-- [Deployment](#deployment)
-  - [Deploying](#deploying)
-  - [Forking](#forking)
-  - [Cloning](#cloning)
-- [Credits](#credits)
-  - [Content](#content)
-  - [Code](#code)
-  - [Media](#media)
-  - [Acknowledgements](#acknowledgements)
+    - [Visitor Objectives](#visitor-objectives)
+  - [UX](#ux)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)
+      - [New users](#new-users)
+      - [Returning Users](#returning-users)
+  - [Visuals](#visuals)
+    - [Imagery](#imagery)
+    - [Fonts](#fonts)
+    - [Colours](#colours)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Features across all pages](#features-across-all-pages)
+      - [Landing Page](#landing-page)
+      - [Game Page](#game-page)
+      - [Results Modal](#results-modal)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+  - [Technologies Used](#technologies-used)
+  - [Testing](#testing)
+  - [Manual Functionality Testing](#manual-functionality-testing)
+    - [Issue and Fixes](#issue-and-fixes)
+  - [Deployment](#deployment)
+    - [Deploying](#deploying)
+    - [Forking](#forking)
+    - [Cloning](#cloning)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Code](#code)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## Whack-a-React 
-A reaction time game 
+# Whack-a-React 
+Whack-a-React is a just for fun reaction time game combining the similar game play of Whack-A-Mole with the average reaction times of multiple age categories taken from a reaction time study conducted by the University of Michigan.
+This is not an empirical scientific experiment but is just fun way to get an idea of how old your reaction times are! Are they older or younger than your actual age? Can you improve them? Do you notice any difference depending on what time of day it is?!
+
+This is game for all ages and performance may vary between devices.
+
 
 ### Visitor Objectives
 
