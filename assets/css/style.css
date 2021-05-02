@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap');
+
 body{
     background-color: green;
     text-align: center;
 }
 
 #game-name{
+    font-size: 3rem;
+    margin-top: 50px;
     text-align: center;
+    font-family: 'Press Start 2P';
 }
 
 #main-mole{
+    margin-top: 25px;
     width: 400px;
     height: 400px;
 }
+
+.btn-light{
+    background-color: indigo;
+    color: hotpink;
+    margin-top: 25px;
+   
+}
+
