@@ -25,3 +25,22 @@ body{
    
 }
 
+.grid-row{
+    background-color: burlywood;
+    height: 135px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+
+.square{
+    border-style: solid;
+    border-color: crimson;
+}
+
+.game-mole{
+    background-image: url('../images/game-page-mole.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
