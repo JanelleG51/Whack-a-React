@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap');
 
 body{
-    background-color: green;
+    background-color: #008000;
     text-align: center;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 #game-name{
-    font-size: 3rem;
-    margin-top: 50px;
+    font-size: 1.5rem;
+    margin-top: 30px;
     text-align: center;
     font-family: 'Press Start 2P';
 }
@@ -25,10 +27,6 @@ body{
    
 }
 
-.game-container{
-    height: 75vh;
-}
-
 .grid-row{
     height: 135px;
     margin-left: 15px;
@@ -36,8 +34,8 @@ body{
     justify-content: center;
 
 }
-    
-.game-mole{
+   
+.mole{
     background-image: url('../images/mole_75x75.png');
     background-repeat: no-repeat;
     background-position: center;
