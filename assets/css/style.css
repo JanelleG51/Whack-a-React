@@ -27,15 +27,11 @@ body{
    
 }
 
-.grid-row{
-    height: 135px;
-    margin-left: 15px;
-    margin-right: 15px;
-    justify-content: center;
 
-}
-   
-.mole{
+#mole{
+    width: 200px;
+    height: 200px;
+    display: none;
     background-image: url('../images/mole_75x75.png');
     background-repeat: no-repeat;
     background-position: center;
