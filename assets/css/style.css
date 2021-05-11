@@ -5,6 +5,7 @@ body{
     text-align: center;
     overflow-x: hidden;
     height: 100vh;
+    
 }
 
 #game-name{
@@ -29,8 +30,8 @@ body{
 
 
 #mole{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: none;
     background-image: url('../images/mole_75x75.png');
     background-repeat: no-repeat;
