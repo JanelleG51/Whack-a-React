@@ -1,42 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap');
 
 body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
     background-color: #008000;
+    font-family: 'Press Start 2P', Arial, sans-serif;
     text-align: center;
-    overflow-x: hidden;
-    height: 100vh;
+    overflow-x: hidden !important;
     
 }
 
+.container-fluid{
+    padding: 0;
+    height: auto;
+    overflow-x: hidden !important;
+}
+
 #game-name{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-top: 30px;
     text-align: center;
-    font-family: 'Press Start 2P';
 }
 
 #main-mole{
     margin-top: 25px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
+}
+
+h1, h2{
+    text-shadow: 2px 2px 2px violet;
 }
 
 .btn-light{
+    box-shadow: 0 0 0.5em hotpink;
+    font-size: 1.25em;
     background-color: indigo;
     color: hotpink;
     margin-top: 25px;
+    text-shadow: 0 0 .25em rgb(54, 50, 52), 0 0 0.25em rgb(241, 238, 238);
+
    
 }
 
+#game-row{
+    height: 75vh;
+    width: 75%;
+}
 
 #mole{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     display: none;
     background-image: url('../images/mole_75x75.png');
     background-repeat: no-repeat;
     background-position: center;
     object-fit: contain;
+    position: relative;
     
 }
 

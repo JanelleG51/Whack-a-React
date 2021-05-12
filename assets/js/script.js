@@ -1,15 +1,17 @@
 let start = new Date().getTime();
 
 function makeCuteMoleAppear() {
-    //let top = Math.random() * 1000;
-    //let left = Math.random() * 500;
-    let width = (Math.random() * 1500) + 100;
+    let top = Math.random() * 200;
+    let left = Math.random() * 300;
+    let width = (Math.random() * 200) + 100;
+    
 
     document.getElementById("mole").style.width = width + "px";
     document.getElementById("mole").style.height = width + "px";
-    //document.getElementById("mole").style.top = top + "px";
-    //document.getElementById("mole").style.left = left + "px";
+    document.getElementById("mole").style.top = top + "px";
+    document.getElementById("mole").style.left = left + "px";
     document.getElementById("mole").style.display = "block";
+    
 
     start = new Date().getTime();
 }
