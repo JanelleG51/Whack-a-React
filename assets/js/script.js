@@ -41,9 +41,11 @@ document.getElementById("mole").onclick = function () { //captures reaction time
 
 console.log(totalTime);
 
-//function timer 
 
+//function countdownTimer(){} 
 
 //function returnResults(){} 
 
 //function endGame(){}
+
+
