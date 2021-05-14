@@ -51,11 +51,11 @@ h2{
 
 #game-row{
     height: 75vh;
-    width: 75%;
+    width: 100%;
     background-color: aquamarine;
     margin-left: auto;
     margin-right: auto;
-    /*position: absolute;*/
+    
 }
 
 #mole{
