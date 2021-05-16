@@ -7,7 +7,7 @@ function ready() {
 let currentTime = 20;
 let totalTime = [];
     
-
+//Credit to gattodigital for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() { //makes mole appear at random position on screen and starts timer
     let top = Math.random() * 200;
     let left = Math.random() * 270;

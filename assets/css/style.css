@@ -5,7 +5,8 @@ body{
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: #008000;
+    background-image: url('../images/background-one.png');
+    background-size: cover;
     font-family: 'Press Start 2P', Arial, sans-serif;
     text-align: center;
     overflow-x: hidden !important;
@@ -13,8 +14,8 @@ body{
 }
 
 .container-fluid{
-    padding: 0;
-    height: auto;
+    height: 100vh;
+    width: 100%;
     overflow-x: hidden !important;
 }
 
@@ -42,7 +43,7 @@ h2{
     box-shadow: 0 0 0.5em hotpink;
     font-size: 1.25em;
     background-color: indigo;
-    color: hotpink;
+    color:black;
     margin-top: 25px;
     text-shadow: 0 0 .25em rgb(54, 50, 52), 0 0 0.25em rgb(241, 238, 238);
 
@@ -51,11 +52,7 @@ h2{
 
 #game-row{
     height: 75vh;
-    width: 100%;
-    background-color: aquamarine;
-    margin-left: auto;
-    margin-right: auto;
-    
+    width: 100%;  
 }
 
 #mole{
@@ -72,5 +69,5 @@ h2{
 
 .modal-body{
     background-color: indigo;
+    color: cornsilk;
 }
-
