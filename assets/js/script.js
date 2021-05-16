@@ -16,11 +16,12 @@ function makeCuteMoleAppear() { //makes mole appear at random position on screen
         top = Math.random() * 275;
     } else if (window.innerWidth <= 360) {
         left = Math.random() * 150;
-    } else if (window.innerHeight <=414) {
-        top = Math.random() * 85;
+    } else if (window.innerHeight <= 414) {
+        left = Math.random() * 400;
+        top = Math.random() * 30;
     }
 
-    let width = (Math.random() * 300) + 100;
+    let width = (Math.random() * 150) + 100;
 
     document.getElementById("mole").style.width = width + "px";
     document.getElementById("mole").style.height = width + "px";
