@@ -10,14 +10,16 @@ let totalTime = [];
 
 function makeCuteMoleAppear() { //makes mole appear at random position on screen and starts timer
     let top = Math.random() * 200;
-    let left = Math.random() * 200;
-    if (window.innerWidth >= 675) {
-        left = Math.random() * 1000;
-        top = Math.random() * 500;
-    }
-    if (window.innerWidth <= 360) {
+    let left = Math.random() * 270;
+    if (window.innerWidth >= 900) {
+        left = Math.random() * 750;
+        top = Math.random() * 275;
+    } else if (window.innerWidth <= 360) {
         left = Math.random() * 150;
+    } else if (window.innerHeight <=414) {
+        top = Math.random() * 85;
     }
+
     let width = (Math.random() * 300) + 100;
 
     document.getElementById("mole").style.width = width + "px";
