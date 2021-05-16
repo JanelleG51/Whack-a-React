@@ -96,7 +96,7 @@ This game is aimed at all demographics with the only exclusions being very young
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to stucture the content on the site.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the presentation of the content on the site.
 - [Google Fonts](https://fonts.google.com/) provided the fonts for this site.
-- [BootstrapCDN](https://getbootstrap.com/docs/5.0/getting-started/introduction/) V.5 Beta was used for this project to assist with the structure and responsiveness of the site. This included Bootstrap's [JavaScript](https://www.javascript.com/) and [Popper](https://popper.js.org/) plugins.
+- [BootstrapCDN](https://getbootstrap.com/docs/5.0/getting-started/introduction/) V.5 was used for this project to assist with the structure and responsiveness of the site. This included Bootstrap's [JavaScript](https://www.javascript.com/) and [Popper](https://popper.js.org/) plugins.
 - [GitHub](https://github.com/join/get-started) provided the online storage space used to host and access all files and links associated with the site.
 - [Gitpod](https://www.gitpod.io/) provided the cloud IDE used to build the site.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site and provide the overall visual layout. 
@@ -135,7 +135,7 @@ This site was developed using [Gitpod IDE](https://www.gitpod.io/), committed to
 To deploy this site to **GitHub** pages, the steps below were taken:
 
 1. The developer logged into **GitHub.**
-2. Once logged in, the desired repository was selected from the options available to the left of the screen **JanelleG51-Hannah-McNeish-Journalist**
+2. Once logged in, the desired repository was selected from the options available to the left of the screen **JanelleG51-Whack-a-React**
 3. From the possible options available, which included **Code, Issues, Pull requests, Actions, Projects, Wiki, Security, Insights and Settings.** **Settings** was selected.
 4. Once in **Settings**, scrolled down the page to **GitHub Pages**.
 5. Under **Source**, clicked on the drop-down menu and changed the selection from **None** to **Master Branch**.
