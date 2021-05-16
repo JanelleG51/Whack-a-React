@@ -3,7 +3,7 @@
   - [UX](#ux)
     - [Target Audience](#target-audience)
     - [User Stories](#user-stories)
-      - [New users](#new-users)
+      - [New Users](#new-users)
       - [Returning Users](#returning-users)
   - [Visuals](#visuals)
     - [Imagery](#imagery)
@@ -46,19 +46,18 @@ This is game for all ages and performance may vary between devices.
 - To gain a loose age comparison of their reaction times in a fun way.
 - Attempt to improve their reaction times.
 - Identify any particular variables that may have an impact on their reaction times.
-
-
-
 ## UX
-
 ### Target Audience 
-
+This game is aimed at all demographics with the only exclusions being very young children and those that are visually impaired. The primary target audience for this site are those that regularly access gaming apps on their mobile phones while travelling, waiting or in need of a brief light entertainment distraction.
 ### User Stories 
-
-#### New users
-
-
+#### New Users
+1.	As a new user, I would like the presentation of the game to feel fun and engaging.
+2.	As a new user, I would like the game to look and feel retro and simplistic.
+3.	As a new user, I want to be able to easily understand how to play the game.
+4.	As a new user, I want the game play to be fully responsive when interacted with.
+5.	As a new user, I want all messages to be clearly visible and easy to read.
 #### Returning Users
+1.	As a returning user, I would like my previous results to be stored to allow tracking of any improvement or detriment in reaction times.
 
 ## Visuals 
 
@@ -97,7 +96,7 @@ This is game for all ages and performance may vary between devices.
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to stucture the content on the site.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the presentation of the content on the site.
 - [Google Fonts](https://fonts.google.com/) provided the fonts for this site.
-- [BootstrapCDN](https://getbootstrap.com/docs/5.0/getting-started/introduction/) V.5 Beta was used for this project to assist with the structure and responsiveness of the site. This included Bootstrap's [JavaScript](https://www.javascript.com/) and [Popper](https://popper.js.org/) plugins to assist with the carousel and navbar functions used on the site.
+- [BootstrapCDN](https://getbootstrap.com/docs/5.0/getting-started/introduction/) V.5 Beta was used for this project to assist with the structure and responsiveness of the site. This included Bootstrap's [JavaScript](https://www.javascript.com/) and [Popper](https://popper.js.org/) plugins.
 - [GitHub](https://github.com/join/get-started) provided the online storage space used to host and access all files and links associated with the site.
 - [Gitpod](https://www.gitpod.io/) provided the cloud IDE used to build the site.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site and provide the overall visual layout. 
