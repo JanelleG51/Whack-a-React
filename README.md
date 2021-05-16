@@ -1,5 +1,5 @@
 - [Whack-a-React](#whack-a-react)
-    - [Visitor Objectives](#visitor-objectives)
+    - [User Objectives](#user-objectives)
   - [UX](#ux)
     - [Target Audience](#target-audience)
     - [User Stories](#user-stories)
@@ -34,13 +34,19 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Whack-a-React 
-Whack-a-React is a just for fun reaction time game combining the similar game play of Whack-A-Mole with the average reaction times of multiple age categories taken from a reaction time study conducted by the University of Michigan.
+Whack-a-React is a just for fun reaction time game which combines the similar game play of Whac-A-Mole invented in 1975 by Kazuo Yamada and the results from a reaction time study conducted in 2010 by the University of Michigan.
 This is not an empirical scientific experiment but is just fun way to get an idea of how old your reaction times are! Are they older or younger than your actual age? Can you improve them? Do you notice any difference depending on what time of day it is?!
 
 This is game for all ages and performance may vary between devices.
 
 
-### Visitor Objectives
+### User Objectives
+- To seek some quick, light entertainment.
+- To feel nostalgic about possible childhood games.
+- To gain a loose age comparison of their reaction times in a fun way.
+- Attempt to improve their reaction times.
+- Identify any particular variables that may have an impact on their reaction times.
+
 
 
 ## UX
