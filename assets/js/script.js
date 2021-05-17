@@ -52,7 +52,8 @@ document.getElementById("mole").onclick = function () { //captures reaction time
     let totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
     for (let i = 0; i < totalTime.length; i++) {
         totalAverageTime += totalTime[i] / totalTime.length
-        console.log(totalAverageTime);
+        totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
+        totalAverageTime.toFixed(2);
     }
     document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
 
