@@ -1,19 +1,21 @@
 function ready() {
 
     const start = new Date().getTime();
-    const timer = document.getElementById("time-left");
+    const timeLeftDisplay = document.getElementById("time-left");
+
 }
 
-let currentTime = 20;
+let timeLeft = 20;
 let totalTime = [];
-    
-//Credit to gattodigital for random positioning and time capture. Adapted to suit this project
+
+
+//Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() { //makes mole appear at random position on screen and starts timer
     let top = Math.random() * 200;
-    let left = Math.random() * 270;
-    if (window.innerWidth >= 900) {
+    let left = Math.random() * 200;
+    if (window.innerWidth >= 895) {
         left = Math.random() * 750;
-        top = Math.random() * 275;
+        top = Math.random() * 450;
     } else if (window.innerWidth <= 360) {
         left = Math.random() * 150;
     } else if (window.innerHeight <= 414) {
@@ -21,7 +23,7 @@ function makeCuteMoleAppear() { //makes mole appear at random position on screen
         top = Math.random() * 30;
     }
 
-    let width = (Math.random() * 150) + 100;
+    let width = (Math.random() * 300) + 100;
 
     document.getElementById("mole").style.width = width + "px";
     document.getElementById("mole").style.height = width + "px";
@@ -33,7 +35,8 @@ function makeCuteMoleAppear() { //makes mole appear at random position on screen
 }
 
 function appearAfterDelay() { //sets the delay between appearances 
-    setTimeout(makeCuteMoleAppear, Math.random() * 3000);
+    setTimeout(makeCuteMoleAppear, Math.random() * 1000);
+
 }
 
 appearAfterDelay();
@@ -41,21 +44,23 @@ appearAfterDelay();
 document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
     document.getElementById("mole").style.display = "none";
 
-    let end = new Date().getTime();  
-    let timeTaken = (end - start) / 1000; //returns users reaction time
+    let end = new Date().getTime();
+    let timeTaken = (end - start) / 1000; //returns users reaction time and pushes then to totalTime array
     document.getElementById("reaction-time").innerHTML = timeTaken + "s";
-    let totalAverage = timeTaken;
-    totalTime.push(totalAverage);
+    totalTime.push(timeTaken);
+
+    let totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
+    for (let i = 0; i < totalTime.length; i++) {
+        totalAverageTime += totalTime[i] / totalTime.length
+        console.log(totalAverageTime);
+    }
+    document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+
     appearAfterDelay(); //resets game play 
-};
+}
 
 console.log(totalTime);
 
 
-//function countdownTimer(){} 
-
-//function returnResults(){} 
 
 //function endGame(){}
-
-
