@@ -1,8 +1,6 @@
 function ready() {
 
-    const start = new Date().getTime();
-    const timeLeftDisplay = document.getElementById("time-left");
-
+    document.addEventListener("DOMContentLoaded", ready);
 }
 
 let timeLeft = 20;
@@ -39,7 +37,9 @@ function appearAfterDelay() { //sets the delay between appearances
 
 }
 
-appearAfterDelay();
+document.getElementById("startGame").onclick = function () {
+    appearAfterDelay()
+};
 
 document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
     document.getElementById("mole").style.display = "none";
@@ -60,7 +60,6 @@ document.getElementById("mole").onclick = function () { //captures reaction time
     appearAfterDelay(); //resets game play 
 }
 
-console.log(totalTime);
 
 
 
