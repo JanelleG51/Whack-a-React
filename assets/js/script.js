@@ -5,7 +5,7 @@ function ready() {
 const mole = document.getElementById("mole")
 let totalTime = [];
 let moleCounter = 0;
-let totalAverageTime;
+let totalAverageTime; 
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() {
