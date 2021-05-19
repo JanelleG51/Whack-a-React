@@ -4,9 +4,14 @@ function ready() {
 }
 
 let totalTime = [];
+let moleCounter = 0;
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
-function makeCuteMoleAppear() { //makes mole appear at random position on screen and starts timer
+function makeCuteMoleAppear() {
+    moleCounter++; 
+    if (moleCounter === 11){
+        endResults();
+    }
     let top = Math.random() * 200;
     let left = Math.random() * 200;
     if (window.innerWidth >= 895) {
@@ -42,9 +47,6 @@ document.getElementById("startGame").onclick = function () {
     appearAfterDelay()
 };
 
-//Tyring to make this block of code run a specific number time using a do/while loop then call results function.
-let numberOfAppearances = 10;
-do {
     document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
         document.getElementById("mole").style.display = "none";
 
@@ -63,7 +65,7 @@ do {
 
         appearAfterDelay(); //resets game play 
     }
-} while (numberOfAppearances < 10);
+   
 
 
 
@@ -71,7 +73,10 @@ do {
 
 
 
-//function results() {
+
+
+
+//function endResults() {
 //show reults modal
 //let results;
 //if(totalAverageTime <= 0.296)
