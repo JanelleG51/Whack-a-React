@@ -18,8 +18,10 @@
 <body>
     <main class="container-fluid">
         <header>
-            <a href="index.html"><h1 id="game-name">Whack-a-React</h1></a>
-            <!--<div><a href="index.html">Home</a></div>-->
+            <a href="index.html">
+                <h1 id="game-name">Whack-a-React</h1>
+            </a>
+
             <div class="row">
                 <div class="col">
                     <h2>Reaction Time</h2>
@@ -27,9 +29,6 @@
                 </div>
                 <div class="col">
                     <button id="startGame">Start</button>
-                    <!--<h2>Time Left</h2>
-                    <h2 id="time-left">20</h2>-->
-
                 </div>
                 <div class="col">
                     <h2>Total Average</h2>
@@ -42,6 +41,27 @@
         <div id="game-row" class="row">
             <div id="mole"></div>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="How to Play"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Whack, Whack, Whack!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="results">...</p>
+                            </div>
+                            <div class="modal-footer">
+        
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
     </main>
 
 

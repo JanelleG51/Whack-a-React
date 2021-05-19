@@ -8,8 +8,8 @@ let moleCounter = 0;
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() {
-    moleCounter++; 
-    if (moleCounter === 11){
+    moleCounter++;
+    if (moleCounter === 11) {
         endResults();
     }
     let top = Math.random() * 200;
@@ -36,51 +36,51 @@ function makeCuteMoleAppear() {
 }
 
 
-
 function appearAfterDelay() { //sets the delay between appearances 
 
     setTimeout(makeCuteMoleAppear, Math.random() * 1000);
 }
 
-
 document.getElementById("startGame").onclick = function () {
     appearAfterDelay()
 };
 
-    document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
-        document.getElementById("mole").style.display = "none";
+document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
+    document.getElementById("mole").style.display = "none";
 
-        let end = new Date().getTime();
-        let timeTaken = (end - start) / 1000; //returns users reaction time and pushes then to totalTime array
-        document.getElementById("reaction-time").innerHTML = timeTaken + "s";
-        totalTime.push(timeTaken);
+    let end = new Date().getTime();
+    let timeTaken = (end - start) / 1000; //returns users reaction time and pushes them to totalTime array
+    document.getElementById("reaction-time").innerHTML = timeTaken + "s";
+    totalTime.push(timeTaken);
 
-        var totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
-        for (var i = 0; i < totalTime.length; i++) {
-            totalAverageTime += totalTime[i] / totalTime.length
-            totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
-            totalAverageTime.toFixed(2);
-        }
-        document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
-
-        appearAfterDelay(); //resets game play 
+    let totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
+    for (let i = 0; i < totalTime.length; i++) {
+        totalAverageTime += totalTime[i] / totalTime.length
+        totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
+        totalAverageTime.toFixed(2);
+        finalAverage.push(totalAverageTime);
     }
-   
+    document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+
+    appearAfterDelay(); //resets game play
+    
+    
+}
+
+//let finalAverage = [];
+
+function endResults() {
+    let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+    resultsModal.show();
+    
+    document.getElementById("results").innerHTML = "Holey Moley!";
+
+    console.log(finalAverage);
+}
 
 
 
-
-
-
-
-
-
-
-//function endResults() {
-//show reults modal
-//let results;
-//if(totalAverageTime <= 0.296)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nHoley Moley! You have the reaction times of a very young mole:\nUnder 18 years old.\nAre you better or worse that you thought?\nWhy not try again!";
+//
 //} else if (totalAverageTime <=0.35)
 //results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nMy My, you are fast! You have the reaction times of a young adult mole:\nBetween 18 & 26 years old.\nAre you better or worse that you thought?\nWhy not try again!";
 //} else if (totalAverageTime <=0.38)
