@@ -5,15 +5,20 @@ body{
     height: auto;
     margin: 0;
     padding: 0;
-    background-image: url('../images/background-one.png');
-    background-size: cover;
     font-family: 'Press Start 2P', Arial, sans-serif;
     text-align: center;
     overflow-x: hidden !important;
     
 }
 
+header a {
+    text-decoration: none;
+    
+}
+
 .container-fluid{
+    background-image: url('../images/background-one.png');
+    background-size: cover;
     height: 100vh;
     width: 100%;
     overflow-x: hidden !important;
@@ -32,6 +37,7 @@ body{
 }
 
 h1 {
+   color: black;
    text-shadow: 1px 1px 1px violet; 
 }
 h2{
@@ -43,7 +49,7 @@ h2{
     box-shadow: 0 0 0.5em hotpink;
     font-size: 1.25em;
     background-color: indigo;
-    color:black;
+    color:whitesmoke;
     margin-top: 25px;
     text-shadow: 0 0 .25em rgb(54, 50, 52), 0 0 0.25em rgb(241, 238, 238);
 
