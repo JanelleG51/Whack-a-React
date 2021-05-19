@@ -2,9 +2,10 @@ function ready() {
 
     document.addEventListener("DOMContentLoaded", ready);
 }
-
+const mole = document.getElementById("mole")
 let totalTime = [];
 let moleCounter = 0;
+let totalAverageTime;
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() {
@@ -26,11 +27,11 @@ function makeCuteMoleAppear() {
 
     let width = (Math.random() * 300) + 100;
 
-    document.getElementById("mole").style.width = width + "px";
-    document.getElementById("mole").style.height = width + "px";
-    document.getElementById("mole").style.top = top + "px";
-    document.getElementById("mole").style.left = left + "px";
-    document.getElementById("mole").style.display = "block";
+    mole.style.width = width + "px";
+    mole.style.height = width + "px";
+    mole.style.top = top + "px";
+    mole.style.left = left + "px";
+    mole.style.display = "block";
 
     start = new Date().getTime();
 }
@@ -45,37 +46,33 @@ document.getElementById("startGame").onclick = function () {
     appearAfterDelay()
 };
 
-document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
-    document.getElementById("mole").style.display = "none";
+mole.onclick = function () { //captures reaction time and removes mole from screen
+    mole.style.display = "none";
 
     let end = new Date().getTime();
     let timeTaken = (end - start) / 1000; //returns users reaction time and pushes them to totalTime array
     document.getElementById("reaction-time").innerHTML = timeTaken + "s";
     totalTime.push(timeTaken);
 
-    let totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
-    for (let i = 0; i < totalTime.length; i++) {
+    totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
+    for (var i = 0; i < totalTime.length; i++) {
         totalAverageTime += totalTime[i] / totalTime.length
         totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
         totalAverageTime.toFixed(2);
-        finalAverage.push(totalAverageTime);
-    }
-    document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+        document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
 
-    appearAfterDelay(); //resets game play
-    
-    
+    };
+
+    appearAfterDelay();
 }
 
-//let finalAverage = [];
 
 function endResults() {
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
     resultsModal.show();
-    
-    document.getElementById("results").innerHTML = "Holey Moley!";
 
-    console.log(finalAverage);
+    document.getElementById("results").innerHTML = totalAverageTime + "s";
+
 }
 
 
