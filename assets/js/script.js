@@ -31,37 +31,42 @@ function makeCuteMoleAppear() { //makes mole appear at random position on screen
 }
 
 
+
 function appearAfterDelay() { //sets the delay between appearances 
 
     setTimeout(makeCuteMoleAppear, Math.random() * 1000);
-
-};
+}
 
 
 document.getElementById("startGame").onclick = function () {
     appearAfterDelay()
 };
 
-document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
-    document.getElementById("mole").style.display = "none";
+//Tyring to make this block of code run a specific number time using a do/while loop then call results function.
+let numberOfAppearances = 10;
+do {
+    document.getElementById("mole").onclick = function () { //captures reaction time and removes mole from screen
+        document.getElementById("mole").style.display = "none";
 
-    let end = new Date().getTime();
-    let timeTaken = (end - start) / 1000; //returns users reaction time and pushes then to totalTime array
-    document.getElementById("reaction-time").innerHTML = timeTaken + "s";
-    totalTime.push(timeTaken);
+        let end = new Date().getTime();
+        let timeTaken = (end - start) / 1000; //returns users reaction time and pushes then to totalTime array
+        document.getElementById("reaction-time").innerHTML = timeTaken + "s";
+        totalTime.push(timeTaken);
 
-    var totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
-    for (var i = 0; i < totalTime.length; i++) {
-        totalAverageTime += totalTime[i] / totalTime.length
-        totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
-        totalAverageTime.toFixed(2);
+        var totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
+        for (var i = 0; i < totalTime.length; i++) {
+            totalAverageTime += totalTime[i] / totalTime.length
+            totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
+            totalAverageTime.toFixed(2);
+        }
+        document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+
+        appearAfterDelay(); //resets game play 
     }
-    document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+} while (numberOfAppearances < 10);
 
-    appearAfterDelay(); //resets game play 
-}
 
-//
+
 
 
 
