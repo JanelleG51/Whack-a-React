@@ -71,9 +71,10 @@ function endResults() {
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
     resultsModal.show();
 
-    document.getElementById("results").innerHTML = totalAverageTime + "s";
+    document.getElementById("results").innerText = totalAverageTime + "s";
 
 }
+
 
 
 
