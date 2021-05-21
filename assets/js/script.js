@@ -44,30 +44,35 @@ function appearAfterDelay() { //sets the delay between appearances
     setTimeout(makeCuteMoleAppear, Math.random() * 1000);
 }
 
-document.getElementById("startGame").onclick = function () {
-    appearAfterDelay()
-};
+let startGame = document.getElementById("startGame");
 
-mole.onclick = function () { //captures reaction time and removes mole from screen
-    mole.style.display = "none";
-
-    let end = new Date().getTime();
-    let timeTaken = (end - start) / 1000; //returns users reaction time and pushes them to totalTime array
-    document.getElementById("reaction-time").innerHTML = timeTaken + "s";
-    totalTime.push(timeTaken);
-
-    totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
-    for (var i = 0; i < totalTime.length; i++) {
-        totalAverageTime += totalTime[i] / totalTime.length
-        totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
-        totalAverageTime.toFixed(2);
-        document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
-
+if (startGame) {
+    startGame.onclick = function () {
+        appearAfterDelay()
     };
-
-    appearAfterDelay();
 }
+if (mole) {
+    mole.onclick = function () { //captures reaction time and removes mole from screen
+        mole.style.display = "none";
 
+
+        let end = new Date().getTime();
+        let timeTaken = (end - start) / 1000; //returns users reaction time and pushes them to totalTime array
+        document.getElementById("reaction-time").innerHTML = timeTaken + "s";
+        totalTime.push(timeTaken);
+
+        totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
+        for (var i = 0; i < totalTime.length; i++) {
+            totalAverageTime += totalTime[i] / totalTime.length
+            totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
+            totalAverageTime.toFixed(2);
+            document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
+
+        };
+
+        appearAfterDelay();
+    }
+}
 
 function endResults() {
     moleCounter = 0;
@@ -75,7 +80,6 @@ function endResults() {
     reactionTime.innerHTML = 0;
     let totalAverage = document.getElementById("total-average-time");
     totalAverage.innerHTML = 0;
-    let mole = document.getElementById("mole");
     mole.style.display = "none";
 
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
