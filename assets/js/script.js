@@ -5,7 +5,9 @@ function ready() {
 const mole = document.getElementById("mole")
 let totalTime = [];
 let moleCounter = 0;
-let totalAverageTime; 
+let totalAverageTime;
+let results;
+ 
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() {
@@ -70,29 +72,24 @@ mole.onclick = function () { //captures reaction time and removes mole from scre
 function endResults() {
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
     resultsModal.show();
-
-    document.getElementById("results").innerText = totalAverageTime + "s";
-
+    if (totalAverageTime <= 0.29) {
+    results = document.getElementById("results").innerText = "Holey Moley!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very young mole: \nUnder 18!\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.35){
+        results = document.getElementById("results").innerText = "My My, you are fast!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a young adult mole between: \n 18 & 26 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.38){
+        results = document.getElementById("results").innerText = "We shall call you quick fingers!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a young(ish) adult mole between: \n 27 & 30 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.43){
+        results = document.getElementById("results").innerText = "Great! Can you do better?\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of an adult mole between: \n 31 & 35 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.47){
+        results = document.getElementById("results").innerText = "Good! Can you do better?\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of an adult mole between: \n 36 & 40 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.53){
+        results = document.getElementById("results").innerText = "Are you just warming up...\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of an older adult mole between: \n 41 & 46 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.59){
+        results = document.getElementById("results").innerText = "Even young moles must get older..\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of an aging adult mole between: \n 47 & 52 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime <=0.68){
+        results = document.getElementById("results").innerText = "You must need a little rest after that..\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a senior adult mole between: \n 53 & 60 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+    } else if (totalAverageTime >=0.69){
+        results = document.getElementById("results").innerText = "Oh my, did you forget you were playing..!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very senior adult mole: \nOver 60 years old\nAre you faster or slower that you thought?\nWhy not try again!";
 }
 
-
-
-
-//
-//} else if (totalAverageTime <=0.35)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nMy My, you are fast! You have the reaction times of a young adult mole:\nBetween 18 & 26 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.38)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of a young(ish) adult mole:\nBetween 27 & 30 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.43)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nBetween 31 & 35 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.47)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nBetween 36 & 40 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.53)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nBetween 41 & 46 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.59)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nBetween 47 & 52 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime <=0.68)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nBetween 53 & 60 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//} else if (totalAverageTime >=0.69)
-//results = document.getElementById("").innerHTML = "Your total average time is + totalAverageTime + 's'\nWe shall call you quick fingers! You have the reaction times of an adult mole:\nOver 60 years old.\nAre you better or worse that you thought?\nWhy not try again!";
-//}
+}
