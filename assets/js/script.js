@@ -70,6 +70,10 @@ mole.onclick = function () { //captures reaction time and removes mole from scre
 
 
 function endResults() {
+    moleCounter = 0;
+    document.getElementById("reaction-time").innerHTML = 0;
+    document.getElementById("total-average-time").innerHTML = 0;
+    document.getElementById("mole").style.display = "none";
     
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
     resultsModal.show();
@@ -92,8 +96,8 @@ function endResults() {
     } else if (totalAverageTime >=0.69){
         results = document.getElementById("results").innerText = "Oh my, did you forget you were playing..!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very senior adult mole: \nOver 60 years old\nAre you faster or slower that you thought?\nWhy not try again!";
 }
-mole.style.display = "none";
-document.getElementById("reaction-time").innerHTML = 0;
-document.getElementById("total-average-time").innerHTML = 0;
+
+
+
 
 }
