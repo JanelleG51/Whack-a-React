@@ -11,9 +11,8 @@ body{
     
 }
 
-header a {
-    text-decoration: none;
-    
+a {
+    text-decoration: none;   
 }
 
 .container-fluid{
@@ -82,16 +81,8 @@ h2{
     color: cornsilk;
 }
 
-.footer-row {
-    background-color: rgb(21,162,3);
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-    
-}
-
-.social-links li a i{
+/*.social-links li a i{
     font-size: 25px;
     padding: 25px;
 
-}
+}*/

@@ -93,7 +93,7 @@ function endResults() {
     if (totalAverageTime <= 0.29) {
         results = document.getElementById("results").innerText = "Holey Moley!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very young mole: \nUnder 18!\nAre you faster or slower that you thought?\nWhy not try again!";
     } else if (totalAverageTime <= 0.35) {
-        results = document.getElementById("results").innerText = "My My, you are fast!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a young adult mole between: \n 18 & 26 years old\nAre you faster or slower that you thought?\nWhy not try again!";
+        results = document.getElementById("results").innerText = "My my, you are fast!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a young adult mole between: \n 18 & 26 years old\nAre you faster or slower that you thought?\nWhy not try again!";
     } else if (totalAverageTime <= 0.38) {
         results = document.getElementById("results").innerText = "We shall call you quick fingers!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a young(ish) adult mole between: \n 27 & 30 years old\nAre you faster or slower that you thought?\nWhy not try again!";
     } else if (totalAverageTime <= 0.43) {
