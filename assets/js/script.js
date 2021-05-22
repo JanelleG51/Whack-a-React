@@ -2,7 +2,9 @@ function ready() {
 
     document.addEventListener("DOMContentLoaded", ready);
 }
-const mole = document.getElementById("mole")
+
+const mole = document.getElementById("mole");
+let buttonDisplay = document.getElementById("startGame");
 let totalTime = [];
 let moleCounter = 0;
 let totalAverageTime;
@@ -38,13 +40,12 @@ function makeCuteMoleAppear() {
     start = new Date().getTime();
 }
 
-
 function appearAfterDelay() { //sets the delay between appearances 
 
     appearances = setTimeout(makeCuteMoleAppear, Math.random() * 1000);
 }
 
-function stopAppearances(){
+function stopAppearances() {
 
     clearTimeout(appearances);
 }
@@ -53,13 +54,13 @@ let startGame = document.getElementById("startGame");
 
 if (startGame) {
     startGame.onclick = function () {
+        buttonDisplay.style.display = "none";
         appearAfterDelay()
     };
 }
 if (mole) {
     mole.onclick = function () { //captures reaction time and removes mole from screen
         mole.style.display = "none";
-
 
         let end = new Date().getTime();
         let timeTaken = (end - start) / 1000; //returns users reaction time and pushes them to totalTime array
@@ -81,6 +82,7 @@ if (mole) {
 
 function endResults() {
     moleCounter = 0;
+    buttonDisplay.style.display = "inline-block";
     let reactionTime = document.getElementById("reaction-time");
     reactionTime.innerHTML = 0;
     let totalAverage = document.getElementById("total-average-time");
@@ -109,5 +111,5 @@ function endResults() {
     };
 
     stopAppearences();
-    
+
 }
