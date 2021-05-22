@@ -27,6 +27,7 @@
     - [Features Left to Implement](#features-left-to-implement)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
+    - [User Stories testing:](#user-stories-testing)
   - [Manual Functionality Testing](#manual-functionality-testing)
     - [Issue and Fixes](#issue-and-fixes)
   - [Deployment](#deployment)
@@ -123,7 +124,8 @@ The Game page presents:
 - To the top centrally between Reaction Time and Total Average, the user is presented with a Start button. 
 - The game begins when the user presses the Start button.
 
-#### Interactive Game Play 
+#### Interactive Game Play
+During game play: 
 - Once in play, the Start button is removed from the screen and the user is presented with the same cartoon mole visible on the Home page – the size of which has been reduced.
 - When presented with the mole, it is the goal of the user to click the mole as quickly as possible. On click, their reaction time appears in the top left under Reaction Time and the mole briefly disappears before reappearing again. 
 - The mole is presented a total of 10 times in a randomly selected position on the screen.
@@ -179,7 +181,23 @@ On game completion:
 
 The developer used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) Service and [W3C Markup Validation](https://validator.w3.org/) Service to check the validity of the site code.
 
-User Stories testing:
+### User Stories testing:
+New users 
+1.	As a new user, I would like the presentation of the game to feel fun and engaging.
+- On arriving at the site, the immediate presentation is colourful, cute, bright and cartoonish. It is easy to quickly identify the fun nature of the game. 
+2.	As a new user, I would like the game to look and feel retro and simplistic.
+- The name of the game, which is clearly visible on both pages, signals to the user the association to Whac-a-Mole and the text used is reminiscent of old arcade games. The options on the site are clear and simple, ‘How to Play’ and ‘Go to Game’. There are no other ultimate options other than game play.
+3.	As a new user, I want to be able to easily understand how to play the game.
+- The ‘How to Play’ modal provides the user with straightforward instructions on how the game is played and what to expect from the results at the end of the game. The modal can be easily opened from the Home page with one click allowing the user to decide if they would like to continue with the game or not in minimal time. 
+4.	As a new user, I want the game play to be fully responsive when interacted with.
+- All interactive elements within the game respond when clicked. Modals open and close when instructed to, redirect to the correct pages occur and all individual and averaged reaction times are displayed.
+5.	As a new user, I want all messages to be clearly visible and easy to read.
+- The site uses highly contrasting colours for backgrounds and fonts while keeping the theme fun and game like. All message text is in a larger font and instructions and results are clear and concise.
+
+Returning Users 
+1.	As a returning user, I would like my previous results to be stored to allow tracking of any improvement or detriment in reaction times.
+- Future features will be added to allow users to store their reaction times, incorporate impacting variables and link with other users.
+
 
 ## Manual Functionality Testing
 
