@@ -86,6 +86,11 @@ The colours used throughout the site were chosen because they are bright, fun an
 
 
 ### Wireframes
+The Wireframe mock-ups were drafted using Balsamiq. These provided the foundation for the visual layout of the site with minor changes on the game page occurring throughout the build:
+- [Landing Page](wireframes/whack-a-react-landing-page-wireframes.png)
+- [Game Page](wireframes/whack-a-react-game-play-page-wireframes.png)
+- [Results Page](wireframes/whack-a-react-game-completion-page-wireframes.png) 
+
 
 
 ## Features
