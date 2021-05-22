@@ -37,7 +37,6 @@
   - [Credits](#credits)
     - [Content](#content)
     - [Code](#code)
-    - [Media](#media)
     - [Acknowledgements](#acknowledgements)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -96,9 +95,9 @@ The colours used throughout the site were chosen because they are bright, fun an
 
 ### Wireframes
 The Wireframe mock-ups were drafted using Balsamiq. These provided the foundation for the visual layout of the site with minor changes on the game page occurring throughout the build:
-- [Home Page](wireframes/whack-a-react-landing-page-wireframes.png)
-- [Game Page](wireframes/whack-a-react-game-play-page-wireframes.png)
-- [Results Page](wireframes/whack-a-react-game-completion-page-wireframes.png) 
+- ![Home Page](wireframes/whack-a-react-landing-page-wireframes.png)
+- ![Game Page](wireframes/whack-a-react-game-play-page-wireframes.png)
+- ![Results Page](wireframes/whack-a-react-game-completion-page-wireframes.png) 
 
 
 
@@ -256,14 +255,11 @@ Forking results in a **secondary branch** of the site being created. The **secon
 ## Credits
 
 ### Content 
-
+Inspiration for the site was taken from Whac-A-Mole by Kazuo Yamada (1975) and [Just Park](https://www.justpark.com/creative/reaction-time-test/). (2014). Images were taken from [Free SVG](https://freesvg.org/mole2) and [Pixabay](https://pixabay.com/illustrations/park-greenspace-green-space-grass-4971822/).
 
 ### Code 
-
-
-### Media 
-
-
+The developer sought guidance from various sources but credit must go to:
+- [Gatto Digital](https://github.com/gattodigital/JS-Reaction-Time/blob/master/js_reaction_time.html) for randoming positioning and reaction time capture. 
 ### Acknowledgements
+The developer is grateful for all guidance received throughout the development of this site with special thanks to, Victor Miclovich (Mentor), CI Tutoring services, the CI Slack Community and the developers peer connections on WhatsApp.
 
-.
