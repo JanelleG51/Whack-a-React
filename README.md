@@ -34,10 +34,10 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Whack-a-React 
-Whack-a-React is a just for fun reaction time game which combines the similar game play of Whac-A-Mole invented in 1975 by Kazuo Yamada and the results from a reaction time study conducted in 2010 by the University of Michigan.
+Whack-a-React is a just for fun reaction time game which combines the similar game play of Whac-A-Mole invented in 1975 by Kazuo Yamada and the results from a reaction time study conducted in 2014, [Just Park](https://www.justpark.com/creative/reaction-time-test/).
 This is not an empirical scientific experiment but is just fun way to get an idea of how old your reaction times are! Are they older or younger than your actual age? Can you improve them? Do you notice any difference depending on what time of day it is?!
 
-This is game for all ages and performance may vary between devices.
+This is game for all ages and performance may vary between devices. For the most accurate results, this game is best played on mobile devices.
 
 
 ### User Objectives
@@ -63,14 +63,26 @@ This game is aimed at all demographics with the only exclusions being very young
 
 ### Imagery 
  
-
+The cartoon mole image used in the game was taken from [Free SVG](https://freesvg.org/mole2). The cartoon background image was taken from [Pixabay](https://pixabay.com/illustrations/park-greenspace-green-space-grass-4971822/). These are the only images used across the site and are both open source and free to use.
 
 ### Fonts
 
+- The site uses Press Start 2P as the font for the body and all headings with a fall back of Arial then ‘sans-serif’.
+- The font chosen reflects the old school retro game appearance the developer wants to convey within the site. Giving the game an arcade/cartoon like look and feel.
 
 
 ### Colours
- 
+The colours used throughout the site were chosen because they are bright, fun and standout. The background is an outside scene and complements the theme of moles coming out of the grass/ground. The buttons and headings are presented in stark contrast with slight neon shadowing to emulate retro arcade gaming. The colours used were:
+
+- rbg(0, 0, 0) Black
+- rgb (238, 130, 238) Violet (Shadowing)
+- rgb (109, 108, 109) Dark Grey (Shadowing)
+- rgb (255, 105, 180) Hot Pink (Shadowing)
+- rgb (75, 0, 130) Indigo
+- rgb (54, 50, 52) Shade of Black (Shadowing)
+- rgb (245, 245, 245) Whitesmoke
+- rgb(241, 238, 238) Off White (Shadowing)
+- rgb (255, 248, 220) Cornsilk 
 
 
 ### Wireframes
