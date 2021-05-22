@@ -7,7 +7,7 @@ let totalTime = [];
 let moleCounter = 0;
 let totalAverageTime;
 let results;
-
+let appearances;
 
 //Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
 function makeCuteMoleAppear() {
@@ -41,7 +41,12 @@ function makeCuteMoleAppear() {
 
 function appearAfterDelay() { //sets the delay between appearances 
 
-    setTimeout(makeCuteMoleAppear, Math.random() * 1000);
+    appearances = setTimeout(makeCuteMoleAppear, Math.random() * 1000);
+}
+
+function stopAppearances(){
+
+    clearTimeout(appearances);
 }
 
 let startGame = document.getElementById("startGame");
@@ -80,7 +85,6 @@ function endResults() {
     reactionTime.innerHTML = 0;
     let totalAverage = document.getElementById("total-average-time");
     totalAverage.innerHTML = 0;
-    mole.style.display = "none";
 
     let resultsModal = new bootstrap.Modal(document.getElementById("exampleModal"));
     resultsModal.show();
@@ -102,6 +106,8 @@ function endResults() {
         results = document.getElementById("results").innerText = "You must need a little rest after that..\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a senior adult mole between: \n 53 & 60 years old\nAre you faster or slower that you thought?\nWhy not try again!";
     } else if (totalAverageTime >= 0.69) {
         results = document.getElementById("results").innerText = "Oh my, did you forget you were playing..!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very senior adult mole: \nOver 60 years old\nAre you faster or slower that you thought?\nWhy not try again!";
-    }
+    };
 
+    stopAppearences();
+    
 }
