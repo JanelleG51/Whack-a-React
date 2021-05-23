@@ -12,7 +12,7 @@ let totalAverageTime;
 let results;
 
 
-//Credit to gattodigital on Github for random positioning and time capture. Adapted to suit this project
+//Credit to gattodigital on Github for random positioning and time capture. Heavily refactored to suit this project.
 function makeCuteMoleAppear() {
     moleCounter++;
     if (moleCounter === 11) {
@@ -41,7 +41,7 @@ function makeCuteMoleAppear() {
     start = new Date().getTime();
 }
 
-function appearAfterDelay() { //sets the delay between appearances 
+function appearAfterDelay() { 
 
     setTimeout(makeCuteMoleAppear, Math.random() * 1000);
 }
