@@ -182,7 +182,7 @@ On game completion:
 
 The developer used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) Service, [W3C Markup Validation](https://validator.w3.org/) Service and [JSHint](https://jshint.com/) to check the validity of the site code.
 
-All code passed through each validator with no errors.
+All code passed through each validator with no errors or warnings.
 
 ### User Stories testing:
 New users 
@@ -215,8 +215,8 @@ Total Average | During each of the 10 occurances of game play, the total average
 Home Icon on Game page| To return the user to the Home page at any time and remain present throughout game play. | Yes 
 Social media icons on Home page| Redirect the user to each of the designated sites and open in a new page.| Yes
 Results Modal| On game completion, modal shows on screen displaying the total average reaction time of the user and in which age bracket this places them. The correct age bracket and message should appear in relation to the final time. | Yes
-Play again button within results modal| Resets the game page and closes the modal. | Yes
-No thank you button within results modal |  Redirects the user back to the Home page.| Yes 
+'Play again!' button within results modal| Resets the game page and closes the modal. | Yes
+'No thank you!' button within results modal |  Redirects the user back to the Home page.| Yes 
 
 
 **Lighthouse Results for Mobile (Incognito)**
@@ -231,11 +231,17 @@ Game Page |96|100|100|100
 - The developer viewed the site across several devices.
 - The site was shared with a group of the developers peers that tested the site across their own devices and returned any issues.
 
+Issue and fixes are addressed below.
+
 ### Issue and Fixes
 
 Issue | Fix |
 ------|-----|
-
+Mole falling out of scope of the screen during game play.| Adjusted sizing of the game row in CSS and set if statements in JS to increase or decrease the random px values depending on inner.width or inner.height of the screen.
+Contrast of text in game buttons not sufficient for optimal readability.| Adjusted text colour to provide a stronger contrast between background and foreground.
+Ending the game play cycle after a set number of times using a do/while loop.| Remove do/while loop and replace with a counter to trigger the end of game after set number of mole appearances.
+Undefined variable errors appearing in the console.| Defined the variables then used if statements on the onclick functions to determine the truth of the variable. 
+Resetting the game at the end of game play with the clearTimout function. | Removed the clearTimeout function and included a Play again button in the results modal which resets game play by reusing the Go to Game button.
 ## Deployment 
 This site was developed using [Gitpod IDE](https://www.gitpod.io/), committed to git and pushed to [GitHub.](https://github.com/join/get-started) 
 
