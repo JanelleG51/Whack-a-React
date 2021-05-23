@@ -30,9 +30,9 @@ function makeCuteMoleAppear() {
     } else if (window.innerHeight <= 414) {
         left = Math.random() * 400;
         top = Math.random() * 30;
-    } else if (window.innerWidth )
+    }
 
-    let width = (Math.random() * 250) + 100;
+    let width = (Math.random() * 275) + 100;
 
     mole.style.width = width + "px";
     mole.style.height = width + "px";
