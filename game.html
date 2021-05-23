@@ -42,13 +42,10 @@
             </div>
         </div>
 
-
-
-
         <div id="game-row" class="row">
             <div id="mole"></div>
         </div>
-
+        <!-------------------------Bootstrap Modal----------------------->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="How to Play" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -59,14 +56,22 @@
                     <div class="modal-body">
                         <p id="results">...</p>
                     </div>
+
                     <div class="modal-footer">
-
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            aria-label="Close">Close</button>
-
+                        <div>
+                            <a href="game.html" class="btn btn-secondary">Play again!</a>
+                            <span class="sr-only">Play again</span>
+                        </div>
+                        <div>
+                            <a href="index.html" class="btn btn-secondary">No thank you!</a>
+                            <span class="sr-only">No thank you</span>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
+        </div>
         </div>
 
     </main>

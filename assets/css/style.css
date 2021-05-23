@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap');
 
+/*-------------General/All Pages---------------*/
 body{
     width: 100%;
     height: 100%;
@@ -14,6 +15,11 @@ body{
 a {
     text-decoration: none;   
 }
+
+h1 {
+    color: black;
+    text-shadow: 1px 1px 1px violet; 
+ }
 
 .container-fluid{
     background-image: url('../images/background-one.png');
@@ -30,21 +36,28 @@ a {
     text-align: center;
 }
 
+.social-links li a i, .home-link i{
+    font-size: 20px;
+    padding: 15px;
+    color: green;
+    border-radius: 50%;
+}
+
+.social-links li a i:hover, .home-link i:hover{
+    background-color: yellowgreen;
+}
+
+.modal-body{
+    background-color: indigo;
+    color: cornsilk;
+}
+
+/*--------------Home Page---------------*/
 #main-mole{
     margin-top: 25px;
     width: 350px;
     height: 350px;
 }
-
-h1 {
-   color: black;
-   text-shadow: 1px 1px 1px violet; 
-}
-h2{
-    text-shadow: 2px 2px 2px rgb(109, 108, 109);
-    font-size: .75em;
-}
-
 
 .btn-light{
     box-shadow: 0 0 0.5em hotpink;
@@ -53,13 +66,14 @@ h2{
     color:whitesmoke;
     margin-top: 25px;
     text-shadow: 0 0 .25em rgb(54, 50, 52), 0 0 0.25em rgb(241, 238, 238);
-
-   
+  
 }
 
+/*----------Game Page--------*/
 #game-row{
     height: 50vh;
     width: 100%;
+    margin-top: 25px;
     padding: 0;
     
 }
@@ -76,20 +90,11 @@ h2{
     
 }
 
-.modal-body{
-    background-color: indigo;
-    color: cornsilk;
+h2{
+    text-shadow: 2px 2px 2px rgb(109, 108, 109);
+    font-size: .75em;
 }
 
-.social-links li a i, .home-link i{
-    font-size: 20px;
-    padding: 15px;
-    color: green;
-    border-radius: 50%;
-    
-
-}
-
-.social-links li a i:hover, .home-link i:hover{
-    background-color: yellowgreen;
+.btn-secondary{
+    background-color: green;
 }
