@@ -43,7 +43,7 @@ function makeCuteMoleAppear() {
     start = new Date().getTime();
 }
 
-//Set time interval between appearances during game play
+//Sets time interval between appearances during game play
 function appearAfterDelay() { 
 
     setTimeout(makeCuteMoleAppear, Math.random() * 1500);
@@ -78,7 +78,7 @@ if (mole) {
         appearAfterDelay();
     };
 }
-//Returns players results based on their overall average reaction time
+//Returns players results based on their overall average reaction time, returns start button and clears reaction times
 function endResults() {
     moleCounter = 0;
     buttonDisplay.style.display = "inline-block";

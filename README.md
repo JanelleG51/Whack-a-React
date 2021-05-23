@@ -86,14 +86,13 @@ The colours used throughout the site were chosen because they are **bright, fun 
 - rgb (75, 0, 130) Indigo
 - rgb (245, 245, 245) Whitesmoke
 - rgb (255, 248, 220) Cornsilk
+- rgb (154, 205, 50) Yellowgreen
 - rgb (238, 130, 238) Violet (Shadowing)
 - rgb (109, 108, 109) Dark Grey (Shadowing)
 - rgb (255, 105, 180) Hot Pink (Shadowing)
 - rgb (54, 50, 52) Shade of Black (Shadowing)
 - rgb(241, 238, 238) Off White (Shadowing)
  
-
-
 ### Wireframes
 The Wireframe mock-ups were drafted using [Balsamiq](https://balsamiq.com/). These provided the foundation for the visual layout of the site with minor changes on the game page occurring throughout the build:
 
@@ -102,8 +101,6 @@ The Wireframe mock-ups were drafted using [Balsamiq](https://balsamiq.com/). The
 ![Game Page](wireframes/whack-a-react-game-play-page-wireframes.png)
 
 ![Results Page](wireframes/whack-a-react-game-completion-page-wireframes.png) 
-
-
 
 ## Features
 ### Features across all pages 

@@ -59,6 +59,10 @@ h1 {
     height: 350px;
 }
 
+.game-button-row{
+    padding-bottom: 25px;
+}
+
 .btn-light{
     box-shadow: 0 0 0.5em hotpink;
     font-size: 1.25em;
