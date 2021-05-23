@@ -2,10 +2,10 @@
 
 /*-------------General/All Pages---------------*/
 body{
-    width: auto;
-    height: auto;
     margin: 0;
     padding: 0;
+    height: auto;
+    width: auto;
     font-family: 'Press Start 2P', Arial, sans-serif;
     text-align: center;
     overflow-x: hidden !important;
@@ -97,3 +97,5 @@ h2{
 .btn-secondary{
     background-color: green;
 }
+
+/*---------End of CSS---------*/

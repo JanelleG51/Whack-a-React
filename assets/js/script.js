@@ -1,18 +1,20 @@
 /*jshint esversion: 6 */
-function ready() {
+(function ready() {
 
     document.addEventListener("DOMContentLoaded", ready);
-}
+})();
 
 const mole = document.getElementById("mole");
 let buttonDisplay = document.getElementById("startGame");
 let totalTime = [];
 let moleCounter = 0;
 let totalAverageTime;
+let start;
 let results;
 
-
 //Credit to gattodigital on Github for random positioning and time capture. Heavily refactored to suit this project.
+
+// Makes mole appear on random position on the screen
 function makeCuteMoleAppear() {
     moleCounter++;
     if (moleCounter === 11) {
@@ -22,7 +24,7 @@ function makeCuteMoleAppear() {
     let left = Math.random() * 200;
     if (window.innerWidth >= 895) {
         left = Math.random() * 750;
-        top = Math.random() * 450;
+        top = Math.random() * 400;
     } else if (window.innerWidth <= 360) {
         left = Math.random() * 150;
     } else if (window.innerHeight <= 414) {
@@ -41,17 +43,18 @@ function makeCuteMoleAppear() {
     start = new Date().getTime();
 }
 
+//Set time interval between appearances during game play
 function appearAfterDelay() { 
 
-    setTimeout(makeCuteMoleAppear, Math.random() * 1000);
+    setTimeout(makeCuteMoleAppear, Math.random() * 1500);
 }
 
 let startGame = document.getElementById("startGame");
-
+//Begins game when Start button is pressed
 if (startGame) {
     startGame.onclick = function () {
         buttonDisplay.style.display = "none";
-        appearAfterDelay()
+        appearAfterDelay();
     };
 }
 if (mole) {
@@ -65,17 +68,17 @@ if (mole) {
 
         totalAverageTime = 0; // adds all reaction times and divides them by array length to return the average 
         for (var i = 0; i < totalTime.length; i++) {
-            totalAverageTime += totalTime[i] / totalTime.length
+            totalAverageTime += totalTime[i] / totalTime.length;
             totalAverageTime = Math.floor(totalAverageTime * 100) / 100;
             totalAverageTime.toFixed(2);
             document.getElementById("total-average-time").innerHTML = totalAverageTime + "s";
 
-        };
+        }
 
         appearAfterDelay();
-    }
+    };
 }
-
+//Returns players results based on their overall average reaction time
 function endResults() {
     moleCounter = 0;
     buttonDisplay.style.display = "inline-block";
@@ -104,6 +107,8 @@ function endResults() {
         results = document.getElementById("results").innerText = "You must need a little rest after that..\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a senior adult mole between: \n 53 & 60 years old\nAre you faster or slower than you thought?\nWhy not try again!";
     } else if (totalAverageTime >= 0.69) {
         results = document.getElementById("results").innerText = "Oh my, did you forget you were playing..!\nYour average reaction time is " + totalAverageTime + "s\n" + "You have the reaction times of a very senior adult mole: \nOver 60 years old\nAre you faster or slower than you thought?\nWhy not try again!";
-    };
+    }
 
 }
+
+//End of script
