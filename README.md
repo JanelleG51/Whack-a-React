@@ -181,6 +181,8 @@ On game completion:
 
 The developer used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) Service, [W3C Markup Validation](https://validator.w3.org/) Service and [JSHint](https://jshint.com/) to check the validity of the site code.
 
+All code passed through each validator with no errors.
+
 ### User Stories testing:
 New users 
 1.	As a new user, I would like the presentation of the game to feel fun and engaging.
