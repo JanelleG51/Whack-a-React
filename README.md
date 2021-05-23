@@ -124,6 +124,7 @@ The Game page presents:
 - On arrival on the [Game Page](https://janelleg51.github.io/Whack-a-React/game.html), the user is presented with an unobstructed view of the **background image** ready for game play.
 - To the top left, the user can see **Reaction Time** set to **zero**. 
 - To the top right, the user can see **Total Average** set to **zero**.
+- A **Home** button situated just below the title and just above the **Start** button.
 - To the top centrally between **Reaction Time** and **Total Average**, the user is presented with a **Start button**. 
 - The game **begins** when the user presses the **Start** button.
 
@@ -205,16 +206,30 @@ Returning Users
 
 Function | Purpose | Fulfilled
 -------- | ------- | ---------
-
+Game Title | To present the user with the name of the game and return the user to the Home page when clicked.| Yes 
+How to Play Button | Presents a modal pop up when clicked and displays instructions on how to play the game and what the game purpose is. |Yes 
+Go to Game button | When clicked, redirects the user to the game page. | Yes 
+Start Button| When clicked, the button disappears from view and game play is initated presenting the first of 10 occurances of the game play cycle. | Yes
+Reaction Time| During each of the 10 occurances of game play, the reaction time of each occasion presents in the top left of the game screen.| Yes
+Total Average | During each of the 10 occurances of game play, the total average reaction time presents in the top right of the game screen.| Yes
+Home Icon on Game page| To return the user to the Home page at any time and remain present throughout game play. | Yes 
+Social media icons on Home page| Redirect the user to each of the designated sites and open in a new page.| Yes
+Results Modal| On game completion, modal shows on screen displaying the total average reaction time of the user and in which age bracket this places them. The correct age bracket and message should appear in relation to the final time. | Yes
+Play again button within results modal| Resets the game page and closes the modal. | Yes
+No thank you button within results modal |  Redirects the user back to the Home page.| Yes 
 
 
 **Lighthouse Results for Mobile (Incognito)**
 
 Page | Performance | Accessibility | Best Practice | SEO 
 -----|-------------|-------------- |---------------|-----
-Home
+Home Page|         78  | 100           |93             |100
+Game Page |96|100|100|100
 
 **External Testing**
+
+- The developer viewed the site across several devices.
+- The site was shared with a group of the developers peers that tested the site across their own devices and returned any issues.
 
 ### Issue and Fixes
 
