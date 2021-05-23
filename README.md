@@ -1,3 +1,5 @@
+![Am I Responsive Image](wireframes/am-I-responsive-png.png)
+## Table of Contents
 - [Whack-a-React](#whack-a-react)
     - [User Objectives](#user-objectives)
   - [UX](#ux)
