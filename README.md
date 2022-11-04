@@ -1,4 +1,7 @@
 ![Am I Responsive Image](wireframes/am-I-responsive-png.png)
+
+Live site can be found [here.](https://janelleg51.github.io/Whack-a-React/)
+
 ## Table of Contents
 - [Whack-a-React](#whack-a-react)
     - [User Objectives](#user-objectives)
@@ -43,7 +46,7 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-Live site can be found [here.](https://janelleg51.github.io/Whack-a-React/)
+
 
 # Whack-a-React 
 Whack-a-React is a just for fun reaction time game which combines the similar game play of Whac-A-Mole invented in 1975 by Kazuo Yamada and the results from a reaction time study conducted in 2014, [Just Park](https://www.justpark.com/creative/reaction-time-test/).
